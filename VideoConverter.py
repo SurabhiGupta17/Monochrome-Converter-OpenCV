@@ -8,7 +8,7 @@ cap = cv2.VideoCapture(path3)
 #%cap = cv2.VideoCapture(0, cv2.CAP_DSHOW) 
 
 fourcc = cv2.VideoWriter_fourcc(*"XVID")
-output = cv2.VideoWriter("output1.avi", fourcc, 20.0, (640, 480))
+output = cv2.VideoWriter("output.avi", fourcc, 20.0, (640, 480))
 
 while cap.isOpened():
     ret, frame = cap.read()
